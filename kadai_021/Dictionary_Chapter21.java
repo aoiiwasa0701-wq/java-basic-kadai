@@ -34,13 +34,17 @@ public class Dictionary_Chapter21 {
 	
 	
 	public void checkDictionary(String[] words) {
+		for (int i = 0; i < words.length; i++) {
+		String result =dictionary.get(words[i]);
 		
-		for(int i =0;i < words.length;i++) {
-			String result =dictionary.get(words[i]);
-			if (result != null) {
-                System.out.println(words[i] + "の意味は" + result);
-            } else {
-                System.out.println(words[i] + "は辞書に存在しません");
+		if (result != null) {
+            System.out.println(words[i] + "の意味は" + result);
+        } else {
+            System.out.println(words[i] + "は辞書に存在しません");
+		
+		
+			
+			
 } 
 
     
